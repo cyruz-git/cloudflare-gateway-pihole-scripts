@@ -67,11 +67,12 @@ jobs:
         env:
           PING_URL: ${{ secrets.PING_URL }}
 
-  keepalive:
-    runs-on: ubuntu-latest
-    permissions:
-      actions: write
-      contents: read
-    steps:
-      - uses: actions/checkout@v4
-      - uses: gautamkrishnar/keepalive-workflow@v2
+  # !!! keepalive action disabled because the keepalive-workflow repository has been disabled by GitHub !!!
+  # keepalive:
+  #  runs-on: ubuntu-latest
+  #  permissions:
+  #    actions: write
+  #    contents: read
+  #  steps:
+  #    - uses: actions/checkout@v4
+  #    - uses: gautamkrishnar/keepalive-workflow@v2
